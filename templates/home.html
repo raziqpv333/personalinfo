@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my personal Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styl.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>raziq.pv</h1>
+            <p>Web Developer | Programmer | Designer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Short bio goes here. Tell a little about yourself, your background, and your skills.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+                <li>React</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <a href="https://github.com/raziqpv333/foodsite" target="_blank">
+                        <img src="{{ url_for('static', filename='images/foodsite cover.jpg') }}" alt="Foodsite Project" class="project-image">
+
+                        <h3>Project 1</h3>
+                        <p>A foodsite portfolio project</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/raziqpv333/python_miniprojects" target="_blank">
+                        <img src="{{ url_for('static', filename='images/python cover.jpg') }}" alt="python miniProject" class="project-image">
+                        <h3>Project 2</h3>
+                        <p>My Python mini projects</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/raziqpv333/flaask" target="_blank">
+                        <img src="{{ url_for('static', filename='images/flask cover.jpg') }}" alt="Flask Projects" class="project-image">
+
+                        <h3>Project 3</h3>
+                        <p>My Flask projects</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/raziqpv333/Ecommerce_using_react-Django" target="_blank">
+                        <img src="{{ url_for('static', filename='images/e com using react django.jpg') }}" alt="e com using react django Project" class="project-image">
+
+                        <h3>Project 4</h3>
+                        <p>E-commerce project using React-Django</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/raziqpv333/djangoprojects" target="_blank">
+                        <img src="{{ url_for('static', filename='images/django mini.jpg') }}" alt="django mini Project" class="project-image">
+
+                        <h3>Project 5</h3>
+                        <p>Mini Django projects</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/raziqpv333/weather_app_using_django" target="_blank">
+                        <img src="{{ url_for('static', filename='images/weather app.jpg') }}" alt="weather app using django Project" class="project-image">
+
+                        <h3>Project 6</h3>
+                        <p>Weather app using Django</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/raziqpv333/django_rest_API" target="_blank">
+                        <img src="{{ url_for('static', filename='images/django rest api.jpg') }}" alt="django rest api" class="project-image">
+
+                        <h3>Project 7</h3>
+                        <p>Django REST API projects</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/raziqpv333/todoapp_using_api" target="_blank">
+                        <img src="{{ url_for('static', filename='images/todo app.jpg') }}" alt="todo app" class="project-image">
+
+                        <h3>Project 8</h3>
+                        <p>Todo app using API</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/raziqpv333/sportsproject_Django" target="_blank">
+                        <img src="{{ url_for('static', filename='images/sports e com.jpg') }}" alt="sports e commerce" class="project-image">
+
+                        <h3>Project 9</h3>
+                        <p>Sports e-commerce project</p>
+                    </a>
+                </div>
+            </div>
+            <a href="../contact" class="contact-button">Contact Me</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Contact: raziqpv333@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
